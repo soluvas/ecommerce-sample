@@ -6,6 +6,23 @@
   <artifactId>ecommerce-web</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <packaging>war</packaging>
+
+	<properties>
+		<org.richfaces.bom.version>4.1.0.20111014-M3</org.richfaces.bom.version>
+	</properties>
+  
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.richfaces</groupId>
+                <artifactId>richfaces-bom</artifactId>
+                <version>${org.richfaces.bom.version}</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+  
   <dependencies>
     <dependency>
       <groupId>org.jboss.spec</groupId>
@@ -19,6 +36,23 @@
       <artifactId>metawidget-forge-scaffold</artifactId>
       <version>1.0.0-SNAPSHOT</version>
     </dependency>
+    
+    <dependency>
+        <groupId>org.richfaces.ui</groupId>
+        <artifactId>richfaces-components-ui</artifactId>
+    </dependency>
+    <dependency>
+        <groupId>org.richfaces.core</groupId>
+        <artifactId>richfaces-core-impl</artifactId>
+    </dependency>
+
+	<dependency>
+	     <groupId>org.richfaces.cdk</groupId>
+	     <artifactId>annotations</artifactId>
+	     <version>4.1.0.20111014-M3</version>
+	     <scope>provided</scope>
+	</dependency>
+    
   </dependencies>
   <repositories>
     <repository>
