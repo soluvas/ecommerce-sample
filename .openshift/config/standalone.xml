@@ -91,7 +91,7 @@
                     <timeout></timeout>
                     <statement></statement>
                 </datasource>
-                <datasource jndi-name="java:jboss/datasources/MysqlDS" enabled="true" use-java-context="true" pool-name="MysqlDS">
+                <datasource jndi-name="java:jboss/datasources/EcommerceMysqlDS" enabled="true" use-java-context="true" pool-name="MysqlDS">
                     <connection-url>jdbc:mysql://${OPENSHIFT_DB_HOST}:${OPENSHIFT_DB_PORT}/ecommerce</connection-url>
                     <driver>mysql</driver>
                     <security>
