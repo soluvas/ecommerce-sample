@@ -1,5 +1,13 @@
-Repo layout
-=========== 
+h1. eCommerce Sample
+
+Model-driven (MDD) Tooling used to generate the source files for this project:
+
+* "Xtext":www.eclipse.org/Xtext/
+* "Xtext Protected Regions":https://github.com/danieldietrich/xtext-protectedregions
+* "Saentity DSL":https://github.com/soluvas/saentity
+
+h2. Repo layout
+
 deployments/ - location for built wars (Details below)
 src/ - maven src structure
 pom.xml - maven build file  
@@ -9,9 +17,8 @@ pom.xml - maven build file
 .openshift/action_hooks/build - Script that gets run every push, just prior to
     starting your app
 
+h2. Details about layout and deployment options
 
-Details about layout and deployment options
-==================
 There are two options for deploying content to the JBoss Application Server within OpenShift Express:
 
 1) (Typical) You can upload your content in a maven src structure as is this sample project and on 
@@ -104,8 +111,7 @@ The relevant marker file types are:
                  user deletes this file, it has no impact.
 
 
-Environment Variables
-=====================
+h2. Environment Variables
 
 OpenShift Express provides several environment variables to reference for ease
 of use.  The following list are some common variables but far from exhaustive:
